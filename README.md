@@ -97,3 +97,19 @@ Debería devolver el código de barras autogenerado
     }
 ]
 
+## Listado de pagos entre un periodo de fechas
+
+### Request
+
+`GET /transactions/?dateFrom=2022-06-15&dateTo=2022-06-15`
+
+    http://127.0.0.1:8000/transactions/?dateFrom=2022-06-15&dateTo=2022-06-15
+
+### Response
+[
+    {
+        "payment_date": "2022-06-15",
+        "amount": "200.00"
+    }
+]
+
